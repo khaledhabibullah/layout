@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+header{
+    background: #3498db;
+    color: #fff;
+    padding: 10px 10px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header-menu {
+	display: flex;
+}
+
+.header-menu span{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+.header-menu input{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+.header-menu ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.header-menu ul li{}
+.header-menu ul li a {
+	display: inline-block;
+	padding: 10px 15px;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.header-icons{}
+.header-icons i {
+	display: inline-block;
+	padding: 10px;
+}
+
+/* --------- banner section-------- */
+.banner-container{
+    max-width: 100%;
+    display: flex;
+}
+aside{
+    width: 25%;
+    background:#ecf0f1;
+    padding: 10px;
+}
+aside p{
+    font-size: 20px;
+    margin: 15px 0px;
+    border: 1px solid #34495e;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+aside img{
+    width: 100%;
+}
+
+article{
+    max-width: 75%;
+    padding: 10px;
+}
+.articale-content p {
+	font-size: 20px;
+	margin-top: 25px;
+	line-height: 27px;
+	margin-bottom: 12px;
+}
+.articale-content h2 {
+	font-size: 25px;
+	margin-bottom: 24px;
+}
+
+.container-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-box{
+    flex-basis: 32%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.card-image img{
+    width: 100%;
+}
+
+.card-content p {
+	font-size: 18px;
+	line-height: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.card-btn a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+	background: #7f8c8d;
+	color: #fff;
+	padding: 10px 17px;
+	border-radius: 3px;
+}
+.card-btn {
+	margin-top: auto;
+}
+.service-box {
+	flex-basis: 32%;
+	border: 1px solid #ccc;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+footer P{
+    color: #fff;
+    background: #8e44ad;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* ------ responsiver css-------- */
+@media (max-width:896px) {
+    aside {
+        display: flex;
+        flex: 0 0 28%;
+    }
+    aside {
+        display: flex;
+        flex: 0 0 28%;
+        flex-direction: column;
+        padding: 0 10px;
+        padding-top: 35px;
+
+    }
+    aside p {
+        margin: 10px 0px;
+        font-size: 19px;
+
+    }
+ 
+   
+}
+@media (max-width:768px) {
+    .main {
+        flex-direction: row;
+        display: flex;
+        order: -1;
+    }
+    .header-menu ul {
+        display: flex;
+    }
+    .container-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+   
+    .service-box {
+        display: flex;
+        max-width: 50%;
+        margin-bottom: 15px;
+     
+    }
+    .container-box {
+        display: flex;
+        align-items: center;
+    }
+    .banner-container {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    aside {
+        display: flex;
+        flex: 0 0 100%;
+      
+    }
+    article {
+        max-width: 100%;
+    }
+    .header-menu {
+        width: 50%;
+    }
+    .header-logo {
+        width: 100%;
+        text-align: center;
+    }
+    .header-menu ul{
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+    }
+    .header-menu span {
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        top: 33px;
+        left: 11px;
+        font-size: 37px;
+        pointer-events: none;
+    }
+    .header-menu input {
+        opacity: 1;
+        visibility: visible;
+        width: 27px;
+        height: 36px;
+        opacity: 0;
+    }
+    .header-menu input:checked ~ ul{
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+    }
+    .header-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-icons {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .header-icons {
+        /*! height: 186px; */
+    }
+    .header-menu {
+        width: 50%;
+        /*! height: 180px; */
+    }
+    .header-menu ul {
+  
+        position: relative;
+        top: 34px;
+        left: -40px;
+    }
+}
+@media (max-width:576px) {
+    .service-box {
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 18px;
+    }
+    .banner-container {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    aside {
+        display: flex;
+        flex: 0 0 100%;
+        padding-top: 0px;
+        margin-bottom: 5px;
+    }
+    article {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .articale-content {
+        text-align: center;
+    }
+    article {
+        order: -1;
+    }
+}
